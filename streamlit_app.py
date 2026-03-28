@@ -1,30 +1,29 @@
 import streamlit as st
 import joblib
 import re
-from nltk.tokenize import word_tokenize
-from nltk.stem import WordNetLemmatizer
-from nltk.corpus import stopwords
+from pathlib import Path
 
 # Load the trained model and vectorizer
-model = joblib.load(r'model.pkl')
-countvec = joblib.load(r'countvec.pkl')
+BASE = Path(__file__).resolve().parent
+model = joblib.load(BASE / 'model.pkl')
+countvec = joblib.load(BASE / 'countvec.pkl')
 
-# Initialize preprocessing tools
-lemmatizer = WordNetLemmatizer()
-en_stopwords = stopwords.words('english')
+# Basic English stopwords set to avoid NLTK data requirements
+BASIC_STOPWORDS = {
+    'a','about','above','after','again','against','all','am','an','and','any','are','as','at','be','because','been','before','being','below','between','both','but','by',
+    'could','did','do','does','doing','down','during','each','few','for','from','further','had','has','have','having','he','her','here','hers','herself','him','himself',
+    'his','how','i','if','in','into','is','it','its','itself','just','me','more','most','my','myself','no','nor','not','now','of','off','on','once','only','or','other','our',
+    'ours','ourselves','out','over','own','same','she','should','so','some','such','than','that','the','their','theirs','them','themselves','then','there','these','they','this',
+    'those','through','to','too','under','until','up','very','was','we','were','what','when','where','which','while','who','whom','why','with','you','your','yours','yourself','yourselves'
+}
 
 def preprocess_text(text):
     # Remove prefixes like "Source - "
     text = re.sub(r"^[^-]*-\s", "", text)
-    # Lowercase
     text = text.lower()
-    # Remove punctuation
     text = re.sub(r"([^\w\s])", "", text)
-    # Tokenize
-    tokens = word_tokenize(text)
-    # Remove stopwords and lemmatize
-    tokens = [lemmatizer.lemmatize(token) for token in tokens if token not in en_stopwords]
-    # Join back to string for vectorization
+    tokens = text.split()
+    tokens = [token for token in tokens if token and token not in BASIC_STOPWORDS]
     return ','.join(tokens)
 
 # Streamlit app interface
