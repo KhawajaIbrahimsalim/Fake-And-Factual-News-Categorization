@@ -1,0 +1,39 @@
+<svg width="1200" height="420" viewBox="0 0 1200 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="420" rx="28" fill="#FFFDF8"/>
+  <text x="60" y="62" fill="#1F2937" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="800">Model Performance</text>
+  <text x="60" y="92" fill="#6B7280" font-family="Segoe UI, Arial, sans-serif" font-size="18">Notebook-reported evaluation metrics for the classical fake-news classifier.</text>
+
+  <line x1="220" y1="330" x2="1090" y2="330" stroke="#D1D5DB" stroke-width="2"/>
+  <line x1="220" y1="140" x2="220" y2="330" stroke="#D1D5DB" stroke-width="2"/>
+
+  <text x="220" y="356" fill="#6B7280" font-family="Segoe UI, Arial, sans-serif" font-size="13">0</text>
+  <text x="386" y="356" fill="#6B7280" font-family="Segoe UI, Arial, sans-serif" font-size="13">20</text>
+  <text x="554" y="356" fill="#6B7280" font-family="Segoe UI, Arial, sans-serif" font-size="13">40</text>
+  <text x="722" y="356" fill="#6B7280" font-family="Segoe UI, Arial, sans-serif" font-size="13">60</text>
+  <text x="890" y="356" fill="#6B7280" font-family="Segoe UI, Arial, sans-serif" font-size="13">80</text>
+  <text x="1050" y="356" fill="#6B7280" font-family="Segoe UI, Arial, sans-serif" font-size="13">100</text>
+
+  <line x1="220" y1="180" x2="1090" y2="180" stroke="#F3F4F6" stroke-width="1.5"/>
+  <line x1="220" y1="230" x2="1090" y2="230" stroke="#F3F4F6" stroke-width="1.5"/>
+  <line x1="220" y1="280" x2="1090" y2="280" stroke="#F3F4F6" stroke-width="1.5"/>
+
+  <text x="60" y="162" fill="#111827" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">Holdout accuracy</text>
+  <rect x="220" y="140" width="761" height="28" rx="14" fill="#F59E0B"/>
+  <text x="995" y="160" fill="#92400E" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="800">87.5%</text>
+
+  <text x="60" y="212" fill="#111827" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">Mean 5-fold CV accuracy</text>
+  <rect x="220" y="190" width="782" height="28" rx="14" fill="#10B981"/>
+  <text x="1016" y="210" fill="#065F46" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="800">89.9%</text>
+
+  <text x="60" y="262" fill="#111827" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">Macro F1</text>
+  <rect x="220" y="240" width="757" height="28" rx="14" fill="#3B82F6"/>
+  <text x="991" y="260" fill="#1D4ED8" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="800">87.0%</text>
+
+  <text x="60" y="312" fill="#111827" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">SGD baseline accuracy</text>
+  <rect x="220" y="290" width="739" height="28" rx="14" fill="#A855F7"/>
+  <text x="973" y="310" fill="#6D28D9" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="800">85.0%</text>
+
+  <rect x="875" y="42" width="255" height="66" rx="18" fill="#FFF7ED" stroke="#FED7AA"/>
+  <text x="898" y="70" fill="#9A3412" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">TAKEAWAY</text>
+  <text x="898" y="92" fill="#7C2D12" font-family="Segoe UI, Arial, sans-serif" font-size="14">The logistic-regression baseline beats the SGD reference and remains stable under 5-fold CV.</text>
+</svg>

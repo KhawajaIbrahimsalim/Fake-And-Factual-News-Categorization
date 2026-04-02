@@ -1,0 +1,53 @@
+<svg width="1200" height="420" viewBox="0 0 1200 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#081C24"/>
+      <stop offset="0.55" stop-color="#0B3142"/>
+      <stop offset="1" stop-color="#124E66"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#6EE7B7"/>
+      <stop offset="1" stop-color="#FDE68A"/>
+    </linearGradient>
+    <filter id="blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="28"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="420" rx="28" fill="url(#bg)"/>
+  <circle cx="1040" cy="86" r="92" fill="#34D399" opacity="0.18" filter="url(#blur)"/>
+  <circle cx="970" cy="305" r="110" fill="#F59E0B" opacity="0.16" filter="url(#blur)"/>
+  <circle cx="180" cy="60" r="80" fill="#60A5FA" opacity="0.12" filter="url(#blur)"/>
+
+  <rect x="54" y="54" width="208" height="36" rx="18" fill="#0F3D4A" stroke="#2DD4BF" stroke-opacity="0.35"/>
+  <text x="78" y="77" fill="#D1FAE5" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700">CLASSICAL NLP + STREAMLIT</text>
+
+  <text x="54" y="150" fill="white" font-family="Segoe UI, Arial, sans-serif" font-size="54" font-weight="800">Categorization Of Fakes</text>
+  <text x="54" y="194" fill="#CFEAF3" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="500">Fake-vs-factual news classification with a deployable, honest, and measurable ML pipeline.</text>
+
+  <rect x="54" y="238" width="214" height="86" rx="20" fill="#0E2A36" stroke="#3B82F6" stroke-opacity="0.35"/>
+  <text x="78" y="276" fill="#8FD3FF" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">DATASET</text>
+  <text x="78" y="307" fill="white" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="800">198 samples</text>
+  <text x="78" y="328" fill="#D5EAF2" font-family="Segoe UI, Arial, sans-serif" font-size="15">100 factual, 98 fake</text>
+
+  <rect x="288" y="238" width="214" height="86" rx="20" fill="#0E2A36" stroke="#34D399" stroke-opacity="0.35"/>
+  <text x="312" y="276" fill="#A7F3D0" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">MODEL</text>
+  <text x="312" y="307" fill="white" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="800">Logistic Regression</text>
+  <text x="312" y="328" fill="#D5EAF2" font-family="Segoe UI, Arial, sans-serif" font-size="15">CountVectorizer with 9,049 terms</text>
+
+  <rect x="522" y="238" width="214" height="86" rx="20" fill="#0E2A36" stroke="#F59E0B" stroke-opacity="0.35"/>
+  <text x="546" y="276" fill="#FDE68A" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">RESULT</text>
+  <text x="546" y="307" fill="white" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="800">87.5% accuracy</text>
+  <text x="546" y="328" fill="#D5EAF2" font-family="Segoe UI, Arial, sans-serif" font-size="15">89.88% mean 5-fold CV</text>
+
+  <g transform="translate(824 134)">
+    <rect x="0" y="0" width="290" height="170" rx="24" fill="#0B2430" stroke="#7DD3FC" stroke-opacity="0.28"/>
+    <rect x="28" y="26" width="108" height="34" rx="17" fill="#103847"/>
+    <text x="49" y="48" fill="#B7F3FF" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">LIVE INFERENCE</text>
+    <rect x="28" y="78" width="234" height="18" rx="9" fill="#123A46"/>
+    <rect x="28" y="108" width="188" height="18" rx="9" fill="#123A46"/>
+    <rect x="28" y="138" width="142" height="18" rx="9" fill="#123A46"/>
+    <circle cx="228" cy="122" r="34" fill="url(#accent)" opacity="0.95"/>
+    <text x="206" y="128" fill="#08212B" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">AI</text>
+  </g>
+</svg>
